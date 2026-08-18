@@ -90,20 +90,7 @@ legal-rag-assistant/
 > statutes. Swap them for real (public-domain) government PDFs/text files
 > once you've verified the pipeline works.
 
----
 
-## Setup
-
-Requires Python 3.10+.
-
-```bash
-cd legal-rag-assistant
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-cp .env.example .env
-```
 
 First run will download the embedding model (~90MB) and the flan-t5-base
 model (~250MB) from HuggingFace — needs internet access once, then it's
@@ -186,35 +173,3 @@ Pass the role via the `X-Role` header. Default is `public` if omitted.
 
 ---
 
-## Extending this into a stronger academic project
-
-- **Swap local LLM for a larger one**: set `LLM_PROVIDER=openai` in `.env`
-  and add `OPENAI_API_KEY` for noticeably better answer quality.
-- **Real documents**: drop PDFs into `data/sample_docs/`, add a PDF loader
-  (`pypdf`) in `ingestion.py`, and update `manifest.json`.
-- **Evaluation**: build a small set of Q&A pairs with known-correct
-  answers and measure retrieval hit-rate / answer accuracy — this is the
-  single highest-value addition for an academic report or resume bullet.
-- **Swap Chroma for pgvector/Qdrant** to demonstrate production-scale
-  vector search.
-- **Real auth**: replace the `X-Role` header (demo-only) with JWT-based
-  auth issuing signed role claims — you already have this pattern from a
-  Flask project, so porting it to FastAPI (e.g. with `fastapi-jwt-auth`
-  or `python-jose`) is a natural next step.
-
-## Security note
-
-The `X-Role` header is **not real authentication** — anyone can claim to
-be `admin` by setting the header themselves. It exists only to
-demonstrate the *retrieval-time RBAC filtering* concept for a portfolio
-project. Do not deploy this as-is; replace with real JWT/session-based
-auth before handling real access-controlled documents.
-
----
-
-## Resume bullet you can use once you've run/extended this
-
-> Built a Retrieval-Augmented Generation system (FastAPI, LangChain,
-> ChromaDB) for querying government/legal documents with role-based
-> access control, returning cited, section-level answers grounded in
-> retrieved context.
