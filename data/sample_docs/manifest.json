@@ -1,0 +1,24 @@
+{
+  "documents": [
+    {
+      "filename": "right_to_information_summary.txt",
+      "title": "Right to Information — Citizen Guidance Summary",
+      "access_level": "public"
+    },
+    {
+      "filename": "consumer_protection_guidelines.txt",
+      "title": "Consumer Protection — Grievance Redressal Guidelines",
+      "access_level": "public"
+    },
+    {
+      "filename": "internal_office_circular.txt",
+      "title": "Internal Office Circular — Document Handling Procedure",
+      "access_level": "restricted"
+    },
+    {
+      "filename": "confidential_audit_notes.txt",
+      "title": "Confidential — Internal Audit Observations",
+      "access_level": "confidential"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+INTERNAL OFFICE CIRCULAR — DOCUMENT HANDLING PROCEDURE
+(Synthetic sample document for demonstration purposes only — RESTRICTED)
+
+Section 1 - Purpose
+This circular sets out the internal procedure for handling, storing, and
+disposing of case files within the department. It is marked
+"restricted" in this demo to illustrate role-based access control: it
+should be visible to "officer" and "admin" roles, but not to "public"
+users of the retrieval system.
+
+Section 2 - File Classification
+All case files must be classified upon receipt as Routine, Priority, or
+Time-Bound. Time-Bound files must be flagged in the tracking system with
+a due date, and the assigned officer is responsible for escalating to
+their supervisor if the file is at risk of missing its deadline.
+
+Section 3 - Access Logging
+Every access to a physical or digital case file must be logged with the
+accessing officer's ID, timestamp, and purpose of access. Logs are
+retained for a minimum of five (5) years and are subject to periodic
+internal audit.
+
+Section 4 - Escalation Procedure
+Files pending beyond the prescribed timeline without valid justification
+must be escalated to the next reporting level within three (3) working
+days of the deadline lapsing. A written explanation must accompany the
+escalation.
+
+Section 5 - Disposal
+Files may only be disposed of, archived, or digitized-and-destroyed
+following the retention schedule published separately by the records
+management unit. No file marked "under litigation" may be disposed of
+under any circumstance until the litigation hold is formally lifted.

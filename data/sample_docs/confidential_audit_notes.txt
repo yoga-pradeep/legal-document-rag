@@ -1,0 +1,27 @@
+CONFIDENTIAL — INTERNAL AUDIT OBSERVATIONS
+(Synthetic sample document for demonstration purposes only — CONFIDENTIAL)
+
+Section 1 - Purpose
+This document simulates a confidential internal audit note. It is
+marked "confidential" in this demo to illustrate the strictest tier of
+role-based access control: only the "admin" role should be able to
+retrieve chunks from this document. Neither "public" nor "officer" roles
+should see this content in query results.
+
+Section 2 - Observation Summary
+During the periodic internal review, minor discrepancies were noted in
+the timestamp logging for three (3) case files in the Priority category.
+The assigned officers have been asked to submit written clarifications
+within seven (7) working days.
+
+Section 3 - Recommended Action
+The audit team recommends a refresher training session on the file
+logging procedure (see the internal office circular, Section 3) for all
+officers handling Priority and Time-Bound files, to be completed within
+the current quarter.
+
+Section 4 - Follow-Up
+A follow-up review is scheduled after the training session to confirm
+compliance. This document and its findings are restricted to
+supervisory and administrative personnel until the review is formally
+closed.
